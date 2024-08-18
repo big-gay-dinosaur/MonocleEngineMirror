@@ -326,7 +326,6 @@ namespace Monocle
                 else
                 {
                     var dir = Path.GetDirectoryName(path);
-                    dir = dir.Substring(Engine.ContentDirectory.Length + 1);
                     Textures.Add(MTexture.FromFile(Path.Combine(dir, file)));
                 }
             }
