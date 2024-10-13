@@ -702,6 +702,11 @@ namespace Monocle
             return Math.Min(Math.Max(value, min), max);
         }
 
+        public static ulong Clamp(ulong value, ulong min, ulong max)
+        {
+            return Math.Min(Math.Max(value, min), max);
+        }
+
         public static float YoYo(float value)
         {
             if (value <= .5f)
